@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class = "container">
+        <div id = "login">
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>User Registration and Login</title>
+            </head>
+            <body>
+                <div>
+                    <h1>Registration Form</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <form action="/register" method="post">
+                        <label for="regUsername">Username:</label><br>
+                        <input type="text" name="regUsername" id="regUsername" required><br>
+                        
+                        <label for="email">Email:</label><br>
+                        <input type="email" name="email" id="email" required><br>
+            
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="regPassword" required><br>
+                        
+                        <label for="gender">Gender:</label><br>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label><br>
+                        
+                        <label for="age">Age:</label><br>
+                        <input type="number" name="age" id="age" required><br>
+                        
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" name="dob" id="dob"><br>
+                        
+                        <label for="country">Country:</label>
+                        <select name="country" id="country" required>
+                            <option value="Kenya">Kenya</option>
+                            <option value="USA">USA</option>
+                            <!-- Add more options here -->
+                        </select><br>
+                        
+                        <label for="hobbies">Hobbies:</label>
+                        <select name="hobbies" id="hobbies" required multiple>
+                            <option value="Cooking">Cooking</option>
+                            <option value="Singing">Singing</option>
+                            <option value="Dancing">Dancing</option>
+                            <option value="Traveling">Traveling</option>
+                            <option value="Reading">Reading</option>
+                            <option value="Writing">Writing</option>
+                            <option value="Painting">Painting</option>
+                            <option value="Gardening">Gardening</option>
+                        </select><br>
+                        <form action="/signin.html" method="get">
+                        <input type="submit" value="Register">
+                    </form>
+                </div>
+                
+                <div>
+                    <h1>Login Form</h1>
+                    <p>Already have an account? Sign in here.</p>
+                    <form action="/login" method="post">
+                        <label for="loginUsername">Username:</label><br>
+                        <input type="text" name="loginUsername" id="loginUsername" required><br> 
+                        
+                        <label for="loginPassword">Password:</label>
+                        <input type="password" name="loginPassword" id="loginPassword" required><br>
+                        <button id="myButton" type="submit">Sign in</button>
+                        
+                        <button type="button" onclick="window.location.href = 'signin.html'">Sign in</button>
+                    </form>
+                </div>
+            </body>
+            </html>
+            
